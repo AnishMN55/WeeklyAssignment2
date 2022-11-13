@@ -1,0 +1,5 @@
+cat mgit.kt | sha1sum       ---->to print the hash object of the mgit.kt data
+cat mgit.kt | sha1sum > .mgit/objects/file_name.txt  -->to store the hash in file_name.txt
+java -jar mgit.jar cat-file OID     --->to print data present in OID
+cat .mgit/objects/file1.txt | java -jar mgit.jar cat-file   -->read the OID present in file1.txt and print data present in it
+
